@@ -1,0 +1,23 @@
+{
+  "name": "media-key-incident-drill",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/media_incident_service.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/leaked_key_drill.test.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
